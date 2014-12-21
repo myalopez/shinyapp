@@ -1,8 +1,6 @@
 library(shiny)
 
-# data = read.csv("http://myalopez120.shinyapps.io/shinyapp/data/MSBanksDec14.csv")
- data = read.csv("C:/Documents and Settings/mlb120/Desktop/shinyapp/data/MSBanksDec14.csv")
-# data = read.csv("data/MSBanksDec14.csv")
+data = read.csv("data/MSBanksDec14.csv")
 banks = data[, c(1, 2, 3, 8, 9, 11, 13, 14)]
 banks1 = banks[, c(2:8)]
 
@@ -18,9 +16,7 @@ sub4 = sub4[, c(2:8)]
 sub5 = banks[banks$SPECGRP == 8, ]
 sub5 = sub5[, c(2:8)]
 
-# data1 = read.csv("http://myalopez120.shinyapps.io/shinyapp/data/MSBanksNov14.csv")
- data1 = read.csv("C:/Documents and Settings/mlb120/Desktop/shinyapp/data/MSBanksNov14.csv")
-# data1 = read.csv("data/MSBanksNov14.csv")
+data1 = read.csv("data/MSBanksNov14.csv")
 bank = data1[, c(1, 2, 3, 8, 9, 11, 13, 14)]
 bank1 = bank[, c(2:8)]
 
